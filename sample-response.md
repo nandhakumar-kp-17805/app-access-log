@@ -17,10 +17,10 @@
       "error_code": "-",
       "error_message": "-",
       "component_details": {
-        "app_display_name": "Order Management",
+        "app_name": "order-management",
         "environment": "production",
         "record_ids": [101, 102, 103],
-        "component_display_name": "all_orders",
+        "component_name": "all_orders",
         "component_type": "Report"
       },
       "user_details": {
@@ -40,8 +40,8 @@
         { "displayName": "View Type", "displayValue": "Report" }
       ],
       "tags": [
-        { "linkName": "version", "displayName": "Version", "value": "1.4.2" },
-        { "linkName": "button", "displayName": "Button", "value": "Approve" }
+        { "key": "version", "displayKey": "Version", "value": "1.4.2" },
+        { "key": "button", "displayKey": "Button", "value": "Approve" }
       ]
     },
     {
@@ -56,10 +56,10 @@
       "error_code": 2930,
       "error_message": "The requested resource is not found. Please verify and try again.",
       "component_details": {
-        "app_display_name": "Order Management",
+        "app_name": "order-management",
         "environment": "production",
         "record_ids": [],
-        "component_display_name": "orders",
+        "component_name": "orders",
         "component_type": "Form"
       },
       "user_details": {
@@ -76,7 +76,7 @@
       },
       "additional_log_info": [],
       "tags": [
-        { "linkName": "version", "displayName": "Version", "value": "1.4.2" }
+        { "key": "version", "displayKey": "Version", "value": "1.4.2" }
       ]
     }
   ]
@@ -85,7 +85,7 @@
 
 ---
 
-## App Log — `GET /applogs?access_log_id=a1b2c3d4-0000-1111-2222-99887766`
+## App Log — `GET /applogs`
 
 ```json
 {
@@ -102,8 +102,8 @@
       "category": "Form Workflow",
       "component_details": {
         "workflow_name": "approve_order",
-        "app_display_name": "order-management",
-        "component_display_name": "orders"
+        "app_name": "order-management",
+        "component_name": "orders"
       },
       "status_code": 200,
       "error_code": "-",
@@ -127,8 +127,8 @@
       "category": "External Call",
       "component_details": {
         "workflow_name": "approve_order",
-        "app_display_name": "order-management",
-        "component_display_name": "orders"
+        "app_name": "order-management",
+        "component_name": "orders"
       },
       "status_code": 200,
       "error_code": "-",
@@ -154,8 +154,8 @@
       "category": "Notification",
       "component_details": {
         "workflow_name": "approve_order",
-        "app_display_name": "order-management",
-        "component_display_name": "orders"
+        "app_name": "order-management",
+        "component_name": "orders"
       },
       "status_code": 200,
       "error_code": "-",
@@ -180,8 +180,8 @@
       "category": "External Call",
       "component_details": {
         "workflow_name": "approve_order",
-        "app_display_name": "order-management",
-        "component_display_name": "orders"
+        "app_name": "order-management",
+        "component_name": "orders"
       },
       "status_code": 999,
       "error_code": "404",
@@ -198,6 +198,8 @@
   ]
 }
 ```
+
+
 
 
 
