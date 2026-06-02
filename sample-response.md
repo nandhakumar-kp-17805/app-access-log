@@ -19,8 +19,6 @@
       "component_details": {
         "app_display_name": "Order Management",
         "environment": "production",
-        "version": "1.4.2",
-        "action_element": "Button:Approve",
         "record_ids": [101, 102, 103],
         "component_display_name": "all_orders",
         "component_type": "Report"
@@ -60,8 +58,6 @@
       "component_details": {
         "app_display_name": "Order Management",
         "environment": "production",
-        "version": "1.4.2",
-        "action_element": "-",
         "record_ids": [],
         "component_display_name": "orders",
         "component_type": "Form"
@@ -202,6 +198,8 @@
   ]
 }
 ```
+
+
 
 
 
