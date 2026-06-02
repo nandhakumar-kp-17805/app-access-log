@@ -11,6 +11,7 @@
       "search_start_time": "01-06-2026 14:32:07",
       "search_end_time": "01-06-2026 19:32:07",
       "category": "User Action",
+      "subcategory": "-",
       "action": "On Click of Button",
       "time_taken": "850 ms",
       "status_code": 200,
@@ -38,11 +39,12 @@
         "mode": "User"
       },
       "additional_log_info": [
-        { "displayName": "Button Name", "displayValue": "Approve" },
-        { "displayName": "Field Name", "displayValue": "Amount" },
         { "displayName": "Report Criteria", "displayValue": "Status == \"Open\"" },
-        { "displayName": "Export Format", "displayValue": "csv" },
         { "displayName": "View Type", "displayValue": "Report" }
+      ],
+      "tags": [
+        { "linkName": "version", "displayName": "Version", "value": "1.4.2" },
+        { "linkName": "button", "displayName": "Button", "value": "Approve" }
       ]
     },
     {
@@ -51,6 +53,7 @@
       "search_start_time": "01-06-2026 14:30:12",
       "search_end_time": "01-06-2026 19:30:12",
       "category": "Api",
+      "subcategory": "External API",
       "action": "Add Record",
       "time_taken": "1.20 s",
       "status_code": 999,
@@ -77,7 +80,10 @@
         "ip_address": "192.168.1.50",
         "mode": "User"
       },
-      "additional_log_info": []
+      "additional_log_info": [],
+      "tags": [
+        { "linkName": "version", "displayName": "Version", "value": "1.4.2" }
+      ]
     }
   ]
 }
@@ -85,7 +91,7 @@
 
 ---
 
-## App Log — `GET /applogs`
+## App Log — `GET /applogs?access_log_id=a1b2c3d4-0000-1111-2222-99887766`
 
 ```json
 {
@@ -112,6 +118,7 @@
       "additional_log_info": [
         { "displayName": "Info Logs", "displayValue": "Workflow executed successfully" }
       ],
+      "record_ids": [101, 102, 103],
       "parent_seq_no": "-"
     },
     {
@@ -138,6 +145,7 @@
         { "displayName": "Result", "displayValue": "success" },
         { "displayName": "Info Logs", "displayValue": "[\"Calling external API\",\"Response 200 OK\"]" }
       ],
+      "record_ids": [101],
       "parent_seq_no": 1
     },
     {
@@ -163,6 +171,7 @@
         { "displayName": "Parameters", "displayValue": "{\"to\":\"approver@acme.com\",\"subject\":\"Order #101 Approval\"}" },
         { "displayName": "Result", "displayValue": "success" }
       ],
+      "record_ids": [101],
       "parent_seq_no": 1
     },
     {
@@ -189,8 +198,12 @@
         { "displayName": "Result", "displayValue": "failure" },
         { "displayName": "Info Logs", "displayValue": "[\"Calling webhook\",\"HTTP 404 Not Found\"]" }
       ],
+      "record_ids": [101],
       "parent_seq_no": 1
     }
   ]
 }
 ```
+
+
+
