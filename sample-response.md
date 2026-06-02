@@ -91,7 +91,7 @@
 
 ---
 
-## App Log — `GET /applogs?access_log_id=a1b2c3d4-0000-1111-2222-99887766`
+## App Log — `GET /applogs`
 
 ```json
 {
