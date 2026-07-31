@@ -44,7 +44,7 @@ Hierarchy: Log Type → Subtype → Event.
 
 | Log Type | Subtype | Events |
 |---|---|---|
-| Workflow | Form workflow | On Create - Form Load, On Create - On Success, On Create - Subform Add Row, On Create - Subform Delete Row, On Create - User Input of a Field, On Create - Validate, On Create/Edit - Form Load, On Create/Edit - On Success, On Create/Edit - Subform Add Row, On Create/Edit - Subform Delete Row, On Create/Edit - User Input of a Field, On Create/Edit - Validate, On Delete - On Success, On Delete - Validate, On Edit - Form Load, On Edit - On Field Update, On Edit - On Success, On Edit - Subform Add Row, On Edit - Subform Delete Row, On Edit - User Input of a Field, On Edit - Validate, On Stateless Form Button Trigger |
+| Workflow | Form workflow | On Create - Form Load, On Create - On Success, On Create - Subform Add Row, On Create - Subform Delete Row, On Create - User Input of a Field, On Create - Validate, On Create/Edit - Form Load, On Create/Edit - On Success, On Create/Edit - Subform Add Row, On Create/Edit - Subform Delete Row, On Create/Edit - User Input of a Field, On Create/Edit - Validate, On Delete - On Success, On Delete - Validate, On Edit - Form Load, On Edit - On Field Update, On Edit - On Success, On Edit - Subform Add Row, On Edit - Subform Delete Row, On Edit - User Input of a Field, On Edit - Validate, On Stateless Form Button Trigger, On Create - Field Rules, On Edit - Field Rules, On Create/Edit - Field Rules |
 | Workflow | Schedule | Custom Schedule, Form Schedule |
 | Workflow | Approval | On Approval, On Rejection |
 | Workflow | Payment | On Payment Failure, On Payment success |
@@ -52,7 +52,7 @@ Hierarchy: Log Type → Subtype → Event.
 | Workflow | Blueprint | On Transition Trigger |
 | Workflow | Page script | Page - HTML Snippet, Page - ZML Snippet, Page Script |
 | Task | Web data | Integration Task, Invoke API, Invoke URL |
-| Task | Notification | Email |
+| Task | Notification | Email, SMS |
 | Task | Debug | Info |
 | Workflow | Batch workflow | _(no events — picking this locks the Event field)_ |
 | Workflow | Function | _(no events — picking this locks the Event field)_ |
@@ -68,7 +68,7 @@ Left visible in the filter, but nothing is ever recorded for them, so selecting 
 - **Upsert Record(s)** — Upsert requests are intentionally not saved to the access log.
 
 ### App Log — events never logged
-On Create - Field Rules, On Edit - Field Rules, On Create/Edit - Field Rules, SMS, App Creation using AI, Form Creation using AI, Deluge Assistance with AI, Delete Record.
+App Creation using AI, Form Creation using AI, Deluge Assistance with AI, Delete Record.
 
 ### App Log — events logged only under an AI category not shown in the Subtype dropdown
 Invoke AI Skill, Add Record, Update Record, Get Record.
