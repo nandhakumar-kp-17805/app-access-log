@@ -56,7 +56,6 @@ Hierarchy: Log Type → Subtype → Event.
 | Task | Debug | Info |
 | Workflow | Batch workflow | _(no events — picking this locks the Event field)_ |
 | Workflow | Function | _(no events — picking this locks the Event field)_ |
-| _(AI — no log type in UI)_ | Prompt-based assistance | _(no events — picking this locks the Event field)_ |
 
 ---
 ## 4. Missed values — options in the dropdown that never return data
