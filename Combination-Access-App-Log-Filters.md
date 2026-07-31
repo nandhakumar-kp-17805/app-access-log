@@ -17,7 +17,7 @@ Picking a value in one field narrows the other two to only the combinations that
 | _(no specific component)_ | _(any)_ | Disable Advance Audit, Enable Advance Audit, Event Pipeline Consumer Execution, Export Audit, Remove Capture IP Address, Restore Record, Save Capture IP Address |
 | Page | User actions in apps | Execute Page Function, Filter Page Chart Data, Page Button Execution, Print Page, View Page |
 | Report | API | Create Bulk Read Job, Download Bulk Read Result, Download File, Download File from Subform, Get Bulk Read Job Status, Get Record by Id, Get Record(s) |
-| Report | User actions in apps | Add Comment, Delete Comment, Export Report, Print Report, Save Record, Update Kanban Event, Update Record Event, View Record, View Report |
+| Report | User actions in apps | Add Comment, Delete Comment, Export Report, Print Report, Update Kanban Event, Update Record Event, View Record, View Report |
 
 Component types with **no activities of their own** (picking them keeps the other fields open): Approval workflow, Payment workflow, Report workflow, Blueprint, Batch workflow, Function.
 
